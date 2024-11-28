@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import java.lang.String?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Hyperlink?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.effect.Glow?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="root" prefHeight="600.0" prefWidth="1000.0" style="-fx-background-color: #ffffff;" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.example.controller.LoginFormController">
+   <children>
+      <ImageView fitHeight="600.0" fitWidth="764.0" layoutX="236.0" layoutY="-1.0">
+         <image>
+            <Image url="@../Assets/360_F_814403243_pZnhpNx4vcBjoQKnJsxYetg3oRuQRKmG.jpg" />
+         </image>
+      </ImageView>
+      <AnchorPane fx:id="rootNode" accessibleRole="TEXT_FIELD" prefHeight="600.0" prefWidth="475.0" style="-fx-background-color: #B6FFA1;">
+         <children>
+            <Label layoutX="108.0" layoutY="216.0" text="Username" textFill="#212884">
+               <font>
+                  <Font name="System Bold" size="12.0" />
+               </font>
+            </Label>
+            <TextField fx:id="txtUserName" layoutX="105.0" layoutY="239.0" prefHeight="28.0" prefWidth="256.0" promptText="Username">
+               <styleClass>
+                  <String fx:value="edge-button" />
+                  <String fx:value="edge-button" />
+               </styleClass>
+            </TextField>
+            <Label layoutX="108.0" layoutY="282.0" text="Password" textFill="#212884">
+               <font>
+                  <Font name="System Bold" size="12.0" />
+               </font></Label>
+            <JFXButton blendMode="SRC_ATOP" buttonType="RAISED" cache="true" graphicTextGap="9.0" layoutX="105.0" layoutY="418.0" onAction="#btnLoginOnAction" prefHeight="32.0" prefWidth="256.0" style="-fx-background-color: #15B392;" styleClass="edge button" text="Login" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="15.0" />
+               </font>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+               <effect>
+                  <Glow />
+               </effect>
+            </JFXButton>
+            <Hyperlink layoutX="117.0" layoutY="470.0" onAction="#linkRegistrationOnAction" prefHeight="23.0" prefWidth="234.0" text="Don't have an account? Register on here" textFill="RED" />
+            <PasswordField fx:id="txtPassword" layoutX="105.0" layoutY="300.0" prefHeight="28.0" prefWidth="256.0" promptText="Password" />
+            <ComboBox fx:id="cmbRole" layoutX="105.0" layoutY="362.0" prefHeight="28.0" prefWidth="256.0" />
+            <Label layoutX="109.0" layoutY="342.0" text="Role" textFill="#212884">
+               <font>
+                  <Font name="System Bold" size="12.0" />
+               </font>
+            </Label>
+            <Label layoutX="130.0" layoutY="72.0" prefHeight="50.0" prefWidth="215.0" text="The Culinary" textFill="#1bbc2b">
+               <font>
+                  <Font name="Eras Demi ITC" size="34.0" />
+               </font>
+            </Label>
+            <Label layoutX="161.0" layoutY="122.0" text="Academy" textFill="WHITE">
+               <font>
+                  <Font name="Eras Demi ITC" size="30.0" />
+               </font>
+            </Label>
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>
